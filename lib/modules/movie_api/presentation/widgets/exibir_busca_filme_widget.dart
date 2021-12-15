@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../shared/presentation/routes/routes.dart';
 import '../../domain/entities/movie_search_entity.dart';
 
 class ExibirBuscaFilmeWidget extends StatelessWidget {
@@ -12,7 +13,13 @@ class ExibirBuscaFilmeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navegar para a página de detalhes do filme
+        Navigator.pushNamed(
+          context,
+          Routes.movieDetails.route,
+          arguments: {
+            'id': movie.id,
+          },
+        );
       },
       child: SizedBox(
         height: MediaQuery.of(context).size.height / 2.5,

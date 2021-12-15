@@ -36,7 +36,9 @@ class _PopularMoviesBlocWidgetState extends State<PopularMoviesBlocWidget> {
                 return MensagemErroWidget(falha.message);
             }
             // LoadingState
-            return const CircularProgressIndicator();
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           },
         ),
       ],

@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import '../models/movie_search_model.dart';
 
 import '../../../../shared/errors/failures_error.dart';
 import '../../domain/entities/movie_details_entity.dart';
 import '../../domain/entities/movie_search_entity.dart';
 import '../../domain/repositories/movies_repository_interface.dart';
 import '../datasources/movies_remote_datasource.dart';
+import '../models/movie_search_model.dart';
 
 typedef Future<List<MovieSearchModel>> _SearchChooser();
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'injection_container.dart' as di;
 
+import 'modules/movie_api/presentation/views/movie_details/movie_details_view.dart';
 import 'modules/movie_api/presentation/views/popular_movies/popular_movies_view.dart';
+import 'shared/presentation/routes/routes.dart';
 
 void main() {
   di.init();
@@ -18,6 +20,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routes: {
+        Routes.popularMovies.route: (ctx) => const PopularMoviesView(),
+        Routes.movieDetails.route: (ctx) => const MovieDetailsView(),
+      },
       home: const PopularMoviesView(),
     );
   }

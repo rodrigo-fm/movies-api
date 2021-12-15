@@ -1,5 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
+import 'package:prova_avonale/modules/movie_api/presentation/views/movie_details/bloc/movie_details_bloc.dart';
 import 'modules/movie_api/data/datasources/movies_remote_datasource.dart';
 import 'modules/movie_api/data/repositories/movies_repository.dart';
 import 'modules/movie_api/domain/repositories/movies_repository_interface.dart';
@@ -13,24 +14,15 @@ final sl = GetIt.instance;
 void init() {
   //! Modules - Movie Api
   // Bloc
-  sl.registerFactory(
-    () => PopularMoviesBloc(
-      getPopularMovies: sl(),
-    ),
-  );
+  sl.registerFactory(() => PopularMoviesBloc(getPopularMovies: sl()));
+  sl.registerFactory(() => MovieDetailsBloc(getMovieDetails: sl()));
 
   // Usecases
-  sl.registerLazySingleton(
-    () => GetPopularMoviesUsecase(sl()),
-  );
-  sl.registerLazySingleton(
-    () => GetMovieDetailsUsecase(sl()),
-  );
+  sl.registerLazySingleton(() => GetPopularMoviesUsecase(sl()));
+  sl.registerLazySingleton(() => GetMovieDetailsUsecase(sl()));
 
   // Repository
-  sl.registerLazySingleton<IMoviesRepository>(
-    () => MoviesRepository(sl()),
-  );
+  sl.registerLazySingleton<IMoviesRepository>(() => MoviesRepository(sl()));
 
   // Datasources
   sl.registerLazySingleton<IMoviesRemoteDatasource>(
