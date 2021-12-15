@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
-import 'package:prova_avonale/shared/errors/exceptions_error.dart';
-import 'package:prova_avonale/shared/models/http_response_model.dart';
+import '../../../../shared/errors/exceptions_error.dart';
+import '../../../../shared/models/http_response_model.dart';
 
 import '../../../../api_key.dart';
 import '../models/movie_details_model.dart';

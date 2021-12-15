@@ -9,6 +9,7 @@ void main() {
     id: 1,
     originalTitle: 'Título original',
     voteAverage: 6.8,
+    posterPath: '/path-2',
   );
   test(
     'deve demonstrar que um MovieSearchModel também é um MovieSearchEntity',

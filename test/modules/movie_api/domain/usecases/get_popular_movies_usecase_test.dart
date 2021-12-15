@@ -19,11 +19,13 @@ void main() {
       id: 1,
       originalTitle: 'título 1',
       voteAverage: 7.8,
+      posterPath: '/path',
     ),
     MovieSearchEntity(
       id: 2,
       originalTitle: 'título 2',
       voteAverage: 6.4,
+      posterPath: '/path-2',
     ),
   ];
 

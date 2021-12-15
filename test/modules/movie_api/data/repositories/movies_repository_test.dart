@@ -21,11 +21,13 @@ void main() {
       id: 1,
       originalTitle: 'titulo 1',
       voteAverage: 1.0,
+      posterPath: '/path',
     ),
     MovieSearchModel(
       id: 2,
       originalTitle: 'titulo 2',
       voteAverage: 2.0,
+      posterPath: '/path-2',
     ),
   ];
 

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:prova_avonale/modules/movie_api/domain/repositories/movies_repository_interface.dart';
+import '../repositories/movies_repository_interface.dart';
 
 import '../../../../shared/errors/failures_error.dart';
 import '../entities/movie_search_entity.dart';

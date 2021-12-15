@@ -6,15 +6,18 @@ class MovieSearchModel extends MovieSearchEntity {
   final int id;
   final String originalTitle;
   final double voteAverage;
+  final String posterPath;
 
   MovieSearchModel({
     required this.id,
     required this.originalTitle,
     required this.voteAverage,
+    required this.posterPath,
   }) : super(
           id: id,
           originalTitle: originalTitle,
           voteAverage: voteAverage,
+          posterPath: posterPath,
         );
 
   factory MovieSearchModel.fromMap(Map<String, dynamic> map) {
@@ -22,6 +25,7 @@ class MovieSearchModel extends MovieSearchEntity {
       id: map['id'],
       originalTitle: map['original_title'],
       voteAverage: map['vote_average'],
+      posterPath: map['poster_path'],
     );
   }
 

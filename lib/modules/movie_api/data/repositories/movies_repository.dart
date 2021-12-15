@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:prova_avonale/modules/movie_api/data/models/movie_search_model.dart';
+import '../models/movie_search_model.dart';
 
 import '../../../../shared/errors/failures_error.dart';
 import '../../domain/entities/movie_details_entity.dart';

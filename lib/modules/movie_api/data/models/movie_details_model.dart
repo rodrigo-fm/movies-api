@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:prova_avonale/modules/movie_api/domain/entities/movie_details_entity.dart';
+import '../../domain/entities/movie_details_entity.dart';
 
 class MovieDetailsModel extends MovieDetailsEntity {
   final int id;
