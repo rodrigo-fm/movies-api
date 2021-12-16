@@ -1,6 +1,6 @@
 {
-    "name": "prova_avonale",
-    "short_name": "prova_avonale",
+    "name": "movies_api",
+    "short_name": "movies_api",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

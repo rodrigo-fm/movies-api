@@ -1,4 +1,4 @@
-package com.example.prova_avonale
+package com.example.movies_api
 
 import io.flutter.embedding.android.FlutterActivity
 

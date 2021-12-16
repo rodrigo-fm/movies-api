@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:prova_avonale/shared/entities/http_response_entity.dart';
-import 'package:prova_avonale/shared/models/http_response_model.dart';
+import 'package:movies_api/shared/entities/http_response_entity.dart';
+import 'package:movies_api/shared/models/http_response_model.dart';
 
 import '../../files/get_file.dart';
 

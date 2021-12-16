@@ -2,10 +2,10 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:prova_avonale/modules/movie_api/domain/entities/movie_search_entity.dart';
-import 'package:prova_avonale/modules/movie_api/domain/repositories/movies_repository_interface.dart';
-import 'package:prova_avonale/modules/movie_api/domain/usecases/get_popular_movies_usecase.dart';
-import 'package:prova_avonale/shared/errors/failures_error.dart';
+import 'package:movies_api/modules/movie_api/domain/entities/movie_search_entity.dart';
+import 'package:movies_api/modules/movie_api/domain/repositories/movies_repository_interface.dart';
+import 'package:movies_api/modules/movie_api/domain/usecases/get_popular_movies_usecase.dart';
+import 'package:movies_api/shared/errors/failures_error.dart';
 
 import 'get_popular_movies_usecase_test.mocks.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:prova_avonale/modules/movie_api/data/models/movie_search_model.dart';
-import 'package:prova_avonale/modules/movie_api/domain/entities/movie_search_entity.dart';
+import 'package:movies_api/modules/movie_api/data/models/movie_search_model.dart';
+import 'package:movies_api/modules/movie_api/domain/entities/movie_search_entity.dart';
 
 import '../../../../files/get_file.dart';
 

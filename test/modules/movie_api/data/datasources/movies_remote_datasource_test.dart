@@ -4,11 +4,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
-import 'package:prova_avonale/api_key.dart';
-import 'package:prova_avonale/modules/movie_api/data/datasources/movies_remote_datasource.dart';
-import 'package:prova_avonale/modules/movie_api/data/models/movie_details_model.dart';
-import 'package:prova_avonale/modules/movie_api/data/models/movie_search_model.dart';
-import 'package:prova_avonale/shared/errors/exceptions_error.dart';
+import 'package:movies_api/api_key.dart';
+import 'package:movies_api/modules/movie_api/data/datasources/movies_remote_datasource.dart';
+import 'package:movies_api/modules/movie_api/data/models/movie_details_model.dart';
+import 'package:movies_api/modules/movie_api/data/models/movie_search_model.dart';
+import 'package:movies_api/shared/errors/exceptions_error.dart';
 
 import '../../../../files/get_file.dart';
 import 'movies_remote_datasource_test.mocks.dart';
