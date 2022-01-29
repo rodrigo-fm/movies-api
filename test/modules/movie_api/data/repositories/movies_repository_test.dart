@@ -101,7 +101,7 @@ void main() {
         // assert
         expect(
           resultado,
-          equals(Left(ServerFailureError('server failure error'))),
+          equals(const Left(ServerFailureError('server failure error'))),
         );
         verify(datasource.searchMovies(any));
       },
@@ -147,7 +147,7 @@ void main() {
         // assert
         expect(
           resultado,
-          equals(Left(ServerFailureError('server failure error'))),
+          equals(const Left(ServerFailureError('server failure error'))),
         );
         verify(datasource.getMovieDetails(movieID));
       },

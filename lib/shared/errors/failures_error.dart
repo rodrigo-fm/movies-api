@@ -10,12 +10,9 @@ abstract class FailureError extends Equatable {
 ///
 /// Ex: via APIs
 class ServerFailureError extends FailureError {
-  final String message;
-
-  const ServerFailureError(this.message) : super(message);
+  const ServerFailureError(String message) : super(message);
 
   @override
-  // TODO: implement props
   List<Object?> get props => [message];
 }
 
@@ -23,11 +20,15 @@ class ServerFailureError extends FailureError {
 ///
 /// Ex: Armazenamento local no dispositivo do usuário
 class CacheFailureError extends FailureError {
-  final String message;
-
-  const CacheFailureError(this.message) : super(message);
+  const CacheFailureError(String message) : super(message);
 
   @override
-  // TODO: implement props
+  List<Object?> get props => [message];
+}
+
+class GenericFailureError extends FailureError {
+  const GenericFailureError(String message) : super(message);
+
+  @override
   List<Object?> get props => [message];
 }
