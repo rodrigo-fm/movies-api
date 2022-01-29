@@ -43,7 +43,8 @@ class MoviesRemoteDatasource implements IMoviesRemoteDatasource {
   @override
   Future<List<MovieSearchModel>> searchMovies(String keyword) {
     return _getMovies(
-      '$apiURL/search/movie?api_key=$apiKey&language=en-US&query=$keyword&page=1&include_adult=false',
+      '$apiURL/search/movie?api_key=$apiKey'
+      '&language=en-US&query=$keyword&page=1&include_adult=false',
     );
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_api/modules/movie_api/presentation/views/popular_movies/bloc/popular_movies_bloc.dart';
 import 'injection_container.dart' as di;
 
 import 'modules/movie_api/presentation/views/movie_details/movie_details_view.dart';
@@ -21,10 +22,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        Routes.popularMovies.route: (ctx) => const PopularMoviesView(),
+        Routes.popularMovies.route: (ctx) => PopularMoviesView(
+              bloc: di.sl<PopularMoviesBloc>(),
+            ),
         Routes.movieDetails.route: (ctx) => const MovieDetailsView(),
       },
-      home: const PopularMoviesView(),
+      initialRoute: Routes.popularMovies.route,
     );
   }
 }
